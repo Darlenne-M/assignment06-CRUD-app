@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <h2>Random Joke</h2>
+    <div id="randJoke-container"></div>
+
+    <div id="container">
+
+        <section id="categories-section">
+            <h3>Joke Categories</h3>
+            <ul id="categories-list"></ul>
+            <form id="input-form">
+                <input type="text" name="category" placeholder="Enter category">
+                <input type="submit" value="Search">
+            </form>
+        </section>
+
+
+        <div id="add-container">
+            <form id="form-container">
+                <h3> Create New Joke</h3>
+                <input type="text" placeholder="category" name="category" id="category" required>
+                <input type="text" placeholder="setup" name="setup" id="setup" required>
+                <input type="text" placeholder="delivery" name="delivery" id="delivery" required>
+                <button type="submit" id="create-joke" class="btn">Create</button>
+            </form>
+        </div>
+
+    </div>
+    <div id="jokes-container"></div>
+
 </body>
+
+
+
 </html>
